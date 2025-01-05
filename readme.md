@@ -25,10 +25,10 @@
 
 ## **Lecturer Information**
 
-- **Name:** [Lecturer's Name]
-- **Email:** [Lecturer's Email]
-- **Office Hours:** [Office Hours Schedule]
-- **Office Location:** [Office Location]
+- **Name:** د. محمد الحربي
+- **Email:** msalharbi@tvtc.gov.sa
+- **Office Hours:** [TBD]
+- **Office Location:** 03/0120
 
 ---
 
