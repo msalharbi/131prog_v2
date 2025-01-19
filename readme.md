@@ -60,8 +60,7 @@
 ## **أدوات المقرر و المراجع**
 
 1. **أدوات البرمجة: Visual Studio Code, Notepad++**.
-2. **برامج التصميم:** Adobe Dreamweaver، Google Web Designer.
-3. **مصادر إضافية:**
+2. **مصادر إضافية:**
    - [W3Schools](https://www.w3schools.com)
    - [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
