@@ -34,7 +34,8 @@
 - **البريد الإلكتروني:** msalharbi@tvtc.gov.sa
 - **الساعات المكتبية:** [TBD]
 - **موقع المكتب:** 03/0120
-- **قناة التليجرام:** <img src="telegram-qr.png" alt="Telegram QR Code" width="200">
+- **قناة التليجرام:** 
+<img src="telegram-qr.png" alt="Telegram QR Code" width="500">
 
 ---
 
