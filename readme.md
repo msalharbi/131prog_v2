@@ -35,7 +35,7 @@
 - **الساعات المكتبية:** [TBD]
 - **موقع المكتب:** 03/0120
 - **قناة التليجرام:** 
-<img src="telegram-qr.png" alt="Telegram QR Code" width="500">
+<img src="telegram-qr.png" alt="Telegram QR Code" width="600">
 
 ---
 
