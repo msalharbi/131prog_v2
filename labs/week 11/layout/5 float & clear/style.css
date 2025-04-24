@@ -1,5 +1,10 @@
 img {
     height: 70px;
+    border: 1px solid lightgrey;
+}
+
+.one{
+    background-color: go;
 }
 .one img {
     float: right;
@@ -8,7 +13,7 @@ img {
 }
 
 .two {
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .two img {
@@ -16,10 +21,10 @@ img {
 }
 
 .three img {
-    float: right;
+    /* float: right; */
 }
 
 .three {
-    clear: both;
+    /* clear: both; */
 }
 
