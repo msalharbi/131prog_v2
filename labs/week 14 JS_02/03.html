@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقدمة JS</title>
+</head>
+
+<body>
+    
+    <input type="email" id="emailInput" oninput="checkEmail()">
+    <p id="errorMsg"></p>
+    
+    <script>
+        function checkEmail(){
+            const email = document.getElementById("emailInput").value;
+            const message = document.getElementById("errorMsg");
+            if (email.includes("@")) {
+                message.innerHTML = "";
+            } else {
+                message.innerHTML = "الرجاء إدخال بريد إلكتروني صحيح";
+            }
+        }
+    </script>
+    
+
+</body>
+
+</html>
