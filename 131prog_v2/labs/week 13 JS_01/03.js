@@ -1,0 +1,6 @@
+
+alert("Welcome to JavaScript!");
+
+
+
+

@@ -1,0 +1,15 @@
+
+div{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+span{
+    background-color:cadetblue;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+

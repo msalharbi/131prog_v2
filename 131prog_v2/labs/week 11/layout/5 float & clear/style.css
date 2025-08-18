@@ -1,0 +1,30 @@
+img {
+    height: 70px;
+    border: 1px solid lightgrey;
+}
+
+.one{
+    background-color: go;
+}
+.one img {
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.two {
+    /* overflow: auto; */
+}
+
+.two img {
+    float: left;
+}
+
+.three img {
+    /* float: right; */
+}
+
+.three {
+    /* clear: both; */
+}
+
