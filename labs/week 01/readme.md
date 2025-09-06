@@ -16,19 +16,21 @@
 
 ---
 
-## 3. كتابة كود HTML بسيط
-افتح الملف `index.html` واكتب الكود التالي:
+## 3. استخدام قالب HTML جاهز في VS Code
+1. افتح الملف `index.html`.
+2. اكتب `!` ثم اضغط **Tab** على لوحة المفاتيح.
+3. سيقوم VS Code تلقائياً بإدراج قالب HTML كامل جاهز، مثل:
 
 ```html
 <!DOCTYPE html>
 <html lang="ar">
 <head>
  <meta charset="UTF-8">
- <title>موقعي الأول</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>عنوان الصفحة</title>
 </head>
 <body>
- <h1>مرحباً بكم في موقعي الأول!</h1>
- <p>هذا مثال بسيط على صفحة HTML.</p>
+ 
 </body>
 </html>
 ```
