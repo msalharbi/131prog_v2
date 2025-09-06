@@ -1,6 +1,0 @@
-
-alert("Welcome to JavaScript!");
-
-
-
-
