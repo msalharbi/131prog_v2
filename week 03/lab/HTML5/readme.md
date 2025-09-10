@@ -34,7 +34,9 @@
 ### 3. عنصر الرسم (Canvas Element)
 - الوسم `<canvas>` يُستخدم للرسم ثنائي الأبعاد مباشرة في المتصفح.
 - يسمح بإنشاء ألعاب ورسومات تفاعلية باستخدام JavaScript.
-
+```html
+ <canvas width="200" height="600" style="border: 5px dashed #da0909;">canvas</canvas>
+```
 ---
 
 ### 4. السحب والإفلات (Drag & Drop API)
