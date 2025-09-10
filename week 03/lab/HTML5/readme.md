@@ -23,11 +23,12 @@
 
 مثال:
 ```html
-<video controls>
-  <source src="movie.mp4" type="video/mp4">
-  المتصفح لا يدعم الفيديو
+<video width="300" height="200" controls autoplay>
+        <source src="lesson.mp4" type="video/mp4"/>
 </video>
-```
+<audio controls>
+        <source src="quran.mp3" type="audio/mp3"/>
+</audio>```
 
 ---
 
