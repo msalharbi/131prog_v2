@@ -94,25 +94,36 @@
 </head>
 <body>
     <h1>نموذج التواصل</h1>
+
     <form action="register.php" method="POST">
-    <h3>نموذج تواصل معنا</h3>
-    <label for="fullname">الاسم الكامل:</label><br>
-    <input type="text" id="fullname" name="fullname" placeholder="اكتباسمك" required><br><br>
-    <label for="email">البريد الإلكتروني:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-    <label for="subject">الموضوع:</label><br>
-    <select id="subject" name="subject">
-        <option value="">-- اختر الموضوع --</option>
-        <option value="inquiry">استفسار</option>
-        <option value="suggestion">اقتراح</option>
-        <option value="problem">مشكلة</option>
-    </select><br><br>
-    <label for="message">الرسالة:</label><br>
-    <textarea id="message" name="message" rows="5" cols="40"><textarea><br><br>
-    <input type="checkbox" id="agree" name="agree" required>
-    <label for="agree">أوافق على سياسة الخصوصية</label><br><br>
-    <input type="submit" value="إرسال">
-    <input type="reset" value="مسح">
+    
+        <label for="fullname">الاسم الكامل:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="اكتب اسمك" required>
+        <br><br>
+        
+        <label for="email">البريد الإلكتروني:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        
+        <label for="subject">الموضوع:</label><br>
+        <select id="subject" name="subject">
+            <option value="">-- اختر الموضوع --</option>
+            <option value="inquiry">استفسار</option>
+            <option value="suggestion">اقتراح</option>
+            <option value="problem">مشكلة</option>
+        </select>
+        <br><br>
+        
+        <label for="message">الرسالة:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40"><textarea>
+        <br><br>
+        
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">أوافق على سياسة الخصوصية</label>
+        <br><br>
+        
+        <input type="submit" value="إرسال">
+        <input type="reset" value="مسح">
     </form>
 </body>
 <html>
