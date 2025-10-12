@@ -15,95 +15,85 @@
 2. افتح المجلد في **Visual Studio Code**.  
 3. أنشئ ملفًا جديدًا باسم: `contactme.html`
 
-
 ---
 
-## الخطوة 2: كتابة الهيكل الأساسي للنموذج
+## الخطوة 2: إنشاء المشروع
+
+### المرحلة 1: الأساسيات – نموذج بسيط (حقول نص فقط)
+
+- الهدف: تعريف المتدربين بمفهوم <form> وحقول الإدخال الأساسية. مثال:
 
 ```html
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>نموذج التواصل</title>
-</head>
-<body>
+<form>
+  <label for="name">الاسم:</label><br>
+  <input type="text" id="name" name="name"><br><br>
 
- <h1>نموذج التواصل</h1>
+  <label for="email">البريد الإلكتروني:</label><br>
+  <input type="email" id="email" name="email"><br><br>
 
- <form action="register.php" method="GET">
-     <!-- الاسم الكامل -->
-     <label for="fullname">الاسم الكامل:</label><br>
-     <input type="text" id="fullname" name="fullname" placeholder="اكتب اسمك الكامل" required><br><br>
+  <input type="submit" value="إرسال">
+</form>
 
-     <!-- البريد الإلكتروني -->
-     <label for="email">البريد الإلكتروني:</label><br>
-     <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+```
+---
+### المرحلة 2: التوسّع – إضافة خيارات وتفاعل
 
-     <!-- رقم الهاتف -->
-     <label for="phone">رقم الهاتف:</label><br>
-     <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx"><br><br>
+- الهدف: تعريف المتدربين بالخيارات المتعددة والقوائم المنسدلة.
+```html
+<form>
+  <label for="name">الاسم:</label>
+  <input type="text" id="name" name="name" required><br><br>
 
-     <!-- الموضوع -->
-     <label for="subject">الموضوع:</label><br>
-     <select id="subject" name="subject" required>
-         <option value="">-- اختر الموضوع --</option>
-         <option value="inquiry">استفسار</option>
-         <option value="problem">مشكلة تقنية</option>
-         <option value="collaboration">تعاون</option>
-         <option value="other">أخرى</option>
-     </select><br><br>
+  <label>الجنس:</label><br>
+  <input type="radio" id="male" name="gender" value="ذكر">
+  <label for="male">ذكر</label><br>
+  <input type="radio" id="female" name="gender" value="أنثى">
+  <label for="female">أنثى</label><br><br>
 
-     <!-- الرسالة -->
-     <label for="message">الرسالة:</label><br>
-     <textarea id="message" name="message" rows="5" cols="40" placeholder="اكتب رسالتك هنا..."></textarea><br><br>
+  <label for="city">المدينة:</label>
+  <select id="city" name="city">
+    <option value="">-- اختر المدينة --</option>
+    <option value="buraydah">بريدة</option>
+    <option value="riyadh">الرياض</option>
+    <option value="jeddah">جدة</option>
+  </select><br><br>
 
-     <!-- طريقة التواصل المفضلة -->
-     <p><strong>طريقة التواصل المفضلة:</strong></p>
-     <input type="radio" id="contact_email" name="contact_method" value="email">
-     <label for="contact_email">البريد الإلكتروني</label><br>
-     <input type="radio" id="contact_phone" name="contact_method" value="phone">
-     <label for="contact_phone">الهاتف</label><br><br>
+  <input type="submit" value="إرسال">
+</form>
 
-     <!-- الموافقة على الشروط -->
-     <input type="checkbox" id="agree" name="agree" required>
-     <label for="agree">أوافق على الشروط والأحكام</label><br><br>
-
-     <!-- الأزرار -->
-     <input type="submit" value="إرسال">
-     <input type="reset" value="إعادة تعيين">
- </form>
-
-</body>
-</html>
 ```
 ---
 
-## الخطوة 3: تحسين النموذج
+### المرحلة 3: النموذج المتكامل – تطبيق نهائي (نموذج تواصل)
 
-- أضف خاصية maxlength="30" لحقل الاسم لتحديد أقصى عدد للأحرف.
-- أضف خاصية pattern="[0-9]{10}" لحقل رقم الهاتف لضمان إدخال 10 أرقام فقط.
-- غيّر method="POST" لتجربة الفرق بين GET و POST.
+### الهدف: دمج كل المهارات السابقة في مشروع تطبيقي متكامل.
 
----
-
-## ملاحظات مهمة
-
-- استخدم label for لربط التسميات بعناصر الإدخال.
-- استخدم placeholder لتوضيح المطلوب من المستخدم.
-- عند الضغط على زر الإرسال، يتم إرسال البيانات إلى الصفحة register.php.
-- عند الضغط على “إعادة تعيين”، يتم مسح الحقول وإعادتها إلى حالتها الافتراضية.
----
-
-## التحدي الإضافي
-
-- أضف حقلًا لاختيار تاريخ التواصل المفضل باستخدام:
 ```html
-<input type="date" name="contact_date">
-```
+<form action="register.php" method="POST">
+  <h3>نموذج تواصل معنا</h3>
 
-- أضف زرًا تجريبيًا ينفذ كود JavaScript بسيط:
-```html
-<input type="button" value="عرض تنبيه" onclick="alert('تم النقر!')">
+  <label for="fullname">الاسم الكامل:</label><br>
+  <input type="text" id="fullname" name="fullname" placeholder="اكتب اسمك" required><br><br>
+
+  <label for="email">البريد الإلكتروني:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="subject">الموضوع:</label><br>
+  <select id="subject" name="subject">
+    <option value="">-- اختر الموضوع --</option>
+    <option value="inquiry">استفسار</option>
+    <option value="suggestion">اقتراح</option>
+    <option value="problem">مشكلة</option>
+  </select><br><br>
+
+  <label for="message">الرسالة:</label><br>
+  <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+  <input type="checkbox" id="agree" name="agree" required>
+  <label for="agree">أوافق على سياسة الخصوصية</label><br><br>
+
+  <input type="submit" value="إرسال">
+  <input type="reset" value="مسح">
+</form>
+
 ```
