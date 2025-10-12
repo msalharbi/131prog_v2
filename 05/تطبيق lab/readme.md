@@ -16,8 +16,23 @@
 3. أنشئ ملفًا جديدًا باسم: `contactme.html`
 
 ---
+## الخطوة 2: كتابة الهيكل الأساسي للصفحة
 
-## الخطوة 2: إنشاء المشروع
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>نموذج التواصل</title>
+</head>
+<body>
+
+</body>
+</html>
+```
+
+## الخطوة 3: إنشاء النموذج Form
 
 ### المرحلة 1: الأساسيات – نموذج بسيط (حقول نص فقط)
 
