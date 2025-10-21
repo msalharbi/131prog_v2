@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج تسجيل مستخدم جديد</title>
+</head>
+<body>
+
+    <h1>نموذج تسجيل مستخدم جديد</h1>
+
+    <form action="#" method="POST">
+
+        <h2>المعلومات الشخصية</h2>
+        <label for="fullname">الاسم الكامل:</label><br>
+        <input type="text" id="fullname" name="fullname" maxlength="30" required><br><br>
+
+        <label for="email">البريد الإلكتروني:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">كلمة المرور:</label><br>
+        <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+        <label>الجنس:</label><br>
+        <input type="radio" id="male" name="gender" value="ذكر">
+        <label for="male">ذكر</label><br>
+        <input type="radio" id="female" name="gender" value="أنثى">
+        <label for="female">أنثى</label><br><br>
+
+        <h2>التخصص والمدينة</h2>
+        <label for="major">التخصص:</label><br>
+        <select id="major" name="major">
+            <option value="">-- اختر التخصص --</option>
+            <option value="برمجيات">برمجيات</option>
+            <option value="شبكات">شبكات</option>
+            <option value="دعم فني">دعم فني</option>
+            <option value="إدارة مكتبية">إدارة مكتبية</option>
+        </select><br><br>
+
+        <label for="city">المدينة:</label><br>
+        <input type="text" id="city" name="city" placeholder="مثال: بريدة"><br><br>
+
+        <h2>الاهتمامات</h2>
+        <input type="checkbox" id="web" name="interest" value="تطوير الويب">
+        <label for="web">تطوير الويب</label><br>
+        <input type="checkbox" id="ai" name="interest" value="الذكاء الاصطناعي">
+        <label for="ai">الذكاء الاصطناعي</label><br>
+        <input type="checkbox" id="security" name="interest" value="الأمن السيبراني">
+        <label for="security">الأمن السيبراني</label><br>
+        <input type="checkbox" id="data" name="interest" value="تحليل البيانات">
+        <label for="data">تحليل البيانات</label><br><br>
+
+        <h2>الملاحظات</h2>
+        <textarea id="notes" name="notes" rows="5" cols="40" placeholder="اكتب ملاحظاتك هنا..."></textarea><br><br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">أوافق على الشروط والأحكام</label><br><br>
+
+        <input type="submit" value="إرسال">
+        <input type="reset" value="مسح">
+    </form>
+
+</body>
+</html>
