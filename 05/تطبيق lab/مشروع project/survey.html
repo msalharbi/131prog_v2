@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استبيان رضا المستخدم</title>
+</head>
+
+<body>
+
+    <h1>استبيان رضا المستخدم</h1>
+
+    <form action="#" method="POST">
+
+        <label for="name">الاسم (اختياري):</label><br>
+        <input type="text" id="name" name="name" placeholder="اكتب اسمك إن رغبت"><br><br>
+
+        <label>كيف تقيم تجربتك معنا؟</label><br>
+        <input type="radio" id="excellent" name="satisfaction" value="راضٍ جدًا">
+        <label for="excellent">راضٍ جدًا</label><br>
+        <input type="radio" id="good" name="satisfaction" value="راضٍ">
+        <label for="good">راضٍ</label><br>
+        <input type="radio" id="bad" name="satisfaction" value="غير راضٍ">
+        <label for="bad">غير راضٍ</label><br><br>
+
+        <label for="city">المدينة:</label>
+        <input list="cities" id="city" name="city">
+        <datalist id="cities">
+            <option value="الرياض">
+            <option value="جدة">
+            <option value="بريدة">
+            <option value="الدمام">
+        </datalist>
+
+        <br><br>
+        <label for="feedback">ما اقتراحاتك للتحسين؟</label><br>
+        <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="شاركنا رأيك..."></textarea><br><br>
+
+        <br>
+        <input type="submit" value="إرسال">
+        <input type="reset" value="مسح"><br><br>
+
+    </form>
+
+    <p>شكرًا لمشاركتك رأيك!</p>
+
+</body>
+
+</html>
