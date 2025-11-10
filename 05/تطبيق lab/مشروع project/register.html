@@ -16,7 +16,8 @@
         <input type="text" id="fullname" name="fullname" placeholder="اكتب اسمك الكامل" required><br><br>
 
         <label for="email">البريد الإلكتروني:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" 
+        title="اكتب إيميل بشكل صحيح" required><br><br>
 
         <label for="password">كلمة المرور:</label><br>
         <input type="password" id="password" name="password" minlength="8" required><br><br>
