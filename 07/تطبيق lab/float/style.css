@@ -1,0 +1,34 @@
+img{
+    width: 70px;
+    height: 70px;
+    /* border: 1px solid gray; */
+}
+.p1{
+    background-color: lightblue;
+    border: 1px solid gray;
+}
+
+.p2{
+    background-color: lightgreen;
+    border: 1px solid gray;
+    overflow: auto;
+}
+
+.p3{
+    background-color: bisque;
+    border: 1px solid gray;
+    clear: right;
+    overflow: auto;
+}
+
+.p1 img{
+    float: left;
+}
+
+.p2 img{
+    float: right;
+}
+
+.p3 img{
+    float: left;
+}
