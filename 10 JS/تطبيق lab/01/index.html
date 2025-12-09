@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <label for="email">Email</label>
     <input type="email" id="email" oninput="checkEmail()">
@@ -18,30 +20,43 @@
 
     <script>
 
-        function checkEmail(){
+        function checkEmail() {
             const email = document.getElementById("email").value
 
-            if(email.includes("@")){
-                document.getElementById("check1").textContent = "تحتوي على @"
+            // عناصر التحقق
+            const check1 = document.getElementById("check1");
+            const check2 = document.getElementById("check2");
+            const check3 = document.getElementById("check3");
+
+
+            if (email.includes("@")) {
+                check1.textContent = "تحتوي على @"
+                check1.style.backgroundColor = "lightgreen"
             }
-            else{
-                document.getElementById("check1").textContent = "لا تحتوي على @"
+            else {
+                check1.textContent = "لا تحتوي على @"
+                check1.style.backgroundColor = "tomato"
             }
 
-            if(email.includes(".") && email.indexOf(".") > email.indexOf("@")){
-                document.getElementById("check2").textContent = "يوجد نقطة بعد @"
+            if (email.includes(".") && email.indexOf(".") > email.indexOf("@")) {
+                check2.textContent = "يوجد نقطة بعد @"
+                check2.style.backgroundColor = "lightgreen"
             } else {
-                document.getElementById("check2").textContent = "لم يتحقق شرط النقطة بعد @"
+                check2.textContent = "لم يتحقق شرط النقطة بعد @"
+                check2.style.backgroundColor = "tomato"
             }
 
-            if(email.length > 8){
-                document.getElementById("check3").textContent = "أطول من ثمان آحرف"
+            if (email.length > 8) {
+                check3.textContent = "أطول من ثمان آحرف"
+                check3.style.backgroundColor = "lightgreen"
             }
-            else{
-                document.getElementById("check3").textContent = "ليس أطول من ثمان أحرف"
+            else {
+                check3.textContent = "ليس أطول من ثمان أحرف"
+                check3.style.backgroundColor = "tomato"
             }
         }
 
     </script>
 </body>
+
 </html>
