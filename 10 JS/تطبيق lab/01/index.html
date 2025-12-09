@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="email">Email</label>
+    <input type="email" id="email" oninput="checkEmail()">
+
+    <ul>
+        <li id="check1">لابد أن يحتوي على @</li>
+        <li id="check2">لا بد أن يحتوي على نقطة بعد @</li>
+        <li id="check3">لا بد أن يكون أطول من ٨ أحرف</li>
+    </ul>
+
+
+    <script>
+
+        function checkEmail(){
+            const email = document.getElementById("email").value
+
+            if(email.includes("@")){
+                document.getElementById("check1").textContent = "تحتوي على @"
+            }
+            else{
+                document.getElementById("check1").textContent = "لا تحتوي على @"
+            }
+
+            if(email.includes(".") && email.indexOf(".") > email.indexOf("@")){
+                document.getElementById("check2").textContent = "يوجد نقطة بعد @"
+            } else {
+                document.getElementById("check2").textContent = "لم يتحقق شرط النقطة بعد @"
+            }
+
+            if(email.length > 8){
+                document.getElementById("check3").textContent = "أطول من ثمان آحرف"
+            }
+            else{
+                document.getElementById("check3").textContent = "ليس أطول من ثمان أحرف"
+            }
+        }
+
+    </script>
+</body>
+</html>
