@@ -124,6 +124,8 @@ function calcTotalWithVAT(price, quantity) {
 - الآن نقوم باستدعاء الدالة `calcTotalWithVAT`  وذلك من أجل حساب إجمالي المبيعات مع الضريبة 
 
 ```js
+// price = 100   - سعر المنتج
+// quantity = 3  - عدد المنتجات المباعة
 let totalPrice = calcTotalWithVAT(100, 3);
 console.log("الإجمالي مع الضريبة:" + totalPrice);
 
