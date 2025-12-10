@@ -103,17 +103,17 @@ function addNumbers(num1, num2){
 - كل دالة مسؤولة عن مهمة محددة ليسهل إعادة استخدامها في أكثر من موضع في الكود.
 
 ```js
-// دالة لحساب المجموع الكلي للمنتجات
+// calcTotal دالة لحساب المجموع الكلي للمنتجات
 function calcTotal(price, quantity) {
   return price * quantity;
 }
 
-// دالة لحساب قيمة الضريبة على سعر معين أو قيمة معينة
+// calcVAT دالة لحساب قيمة الضريبة على سعر معين أو قيمة معينة
 function calcVAT(price) {
   return price * 0.15;
 }
 
-// دالة لحساب المجموع مع الضريبة
+//  calcTotalWithVAT دالة لحساب المجموع مع الضريبة
 function calcTotalWithVAT(price, quantity) {
   let total = calcTotal(price, quantity); 
   let vat =  calcVAT(total)
@@ -125,3 +125,5 @@ let totalPrice = calcTotalWithVAT(100, 3);
 console.log("الإجمالي مع الضريبة:" + totalPrice);
 
 ```
+- النتيجة المتوقعة
+`الإجمالي مع الضريبة:345`
