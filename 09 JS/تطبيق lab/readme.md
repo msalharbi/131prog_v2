@@ -126,6 +126,7 @@ function calcTotalWithVAT(price, quantity) {
 ```js
 // price = 100   - سعر المنتج
 // quantity = 3  - عدد المنتجات المباعة
+
 let totalPrice = calcTotalWithVAT(100, 3);
 console.log("الإجمالي مع الضريبة:" + totalPrice);
 
