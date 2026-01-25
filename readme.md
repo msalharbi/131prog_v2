@@ -34,8 +34,8 @@
 - **البريد الإلكتروني:** msalharbi@tvtc.gov.sa
 - **موقع المكتب:** 03/0120
 - **قناة الواتساب:** 
-<img src="groups_qr/01.jpg" width="50%">
-<img src="groups_qr/02.jpg" width="50%">
+<img src="groups_qr/01.jpg" width="65%">
+<img src="groups_qr/02.jpg" width="65%">
 
 ---
 
