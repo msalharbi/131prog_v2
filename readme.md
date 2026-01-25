@@ -36,6 +36,8 @@
 - **قناة الواتساب:** 
 ![QR Code 1](groups_qr/01.jpg)
 ![QR Code 2](groups_qr/02.jpg)
+<img src="groups_qr/01.jpg" width="50%">
+<img src="groups_qr/02.jpg" width="50%">
 
 ---
 
