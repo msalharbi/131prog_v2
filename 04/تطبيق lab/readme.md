@@ -31,7 +31,7 @@
     <title>مختبر HTML 4</title>
 </head>
 <body>
-    <h1>مرحباً بكم في مختبر HTML 4</h1>
+    <h1>مرحباً بكم في محاضرة HTML 4</h1>
 </body>
 </html>
 ```
