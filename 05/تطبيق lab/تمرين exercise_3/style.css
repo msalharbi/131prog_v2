@@ -1,0 +1,47 @@
+* {
+    margin: 5;
+    padding: 5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+body{
+    background-color:rgb(210, 233, 233);
+}
+
+h1, h2, p{
+    text-align: center;
+}
+
+h1 {
+    font-size: xx-large;
+    background-color: rgba(20,30,180,0.5);
+    color: tomato;
+}
+
+#title_main{
+    font-size: 80px;
+}
+
+h2{
+    border-bottom: 2px dashed gray;
+    font-weight: bolder;
+}
+
+#contacts{
+    background-color: beige;
+    text-align: center;
+}
+
+.ext{
+    color: whit;
+    background-color: aqua;
+    padding: 10px 15px;
+}
+
+.int{
+    color: whit;
+    background-color:beige;
+    padding: 3px 3px;
+}
