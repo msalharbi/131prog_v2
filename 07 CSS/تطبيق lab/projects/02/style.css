@@ -1,0 +1,172 @@
+    /* ===== الألوان والخطوط ===== */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf6e3;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ===== شريط التنقل ===== */
+    nav {
+      background-color: #1a1208;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      color: #c9a84c;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    /* ===== القسم الرئيسي (Hero) ===== */
+    .hero {
+      background-color: #1a1208;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: #c9a84c;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #aaa;
+      margin-bottom: 25px;
+    }
+
+    .hero button {
+      background-color: #c9a84c;
+      color: #1a1208;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    /* ===== قسم المنتجات ===== */
+    .products {
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    .products h2 {
+      font-size: 26px;
+      margin-bottom: 30px;
+      color: #1a1208;
+    }
+
+    .products-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #e0d5be;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .card .price {
+      font-weight: bold;
+      color: #1a1208;
+      font-size: 15px;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 30%;
+    }
+
+    /* ===== نموذج الطلب ===== */
+    .order {
+      background-color: #fff8eb;
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    .order h2 {
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+
+    .order form {
+      display: inline-block;
+      text-align: right;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .order label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .order input,
+    .order select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .order button {
+      width: 100%;
+      background-color: #c9a84c;
+      color: #1a1208;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+
+    /* ===== الفوتر ===== */
+    footer {
+      background-color: #1a1208;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    footer span {
+      color: #c9a84c;
+    }

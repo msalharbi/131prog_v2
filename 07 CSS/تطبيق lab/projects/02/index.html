@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aroma — متجر العطور</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <nav>
+    <div class="logo">AROMA</div>
+    <div>
+      <a href="#products">المنتجات</a>
+      <a href="#order">اطلب الآن</a>
+    </div>
+  </nav>
+
+  <!-- القسم الرئيسي -->
+  <div class="hero">
+    <h1>عطور فاخرة أصيلة </h1>
+    <p>رائحتك تحكي قصّتك — عطور مصنوعة من أجود المكونات</p>
+    <button onclick="document.getElementById('products').scrollIntoView()">
+      اكتشف المجموعة
+    </button>
+  </div>
+
+  <!-- قسم المنتجات -->
+  <div class="products" id="products">
+    <h2>مجموعتنا المختارة</h2>
+    <div class="products-grid">
+
+      <div class="card">
+        <img src="images/01.jpg" alt="">
+        <h3>ورد الشرق</h3>
+        <p>عطر نسائي فاخر بعبق الورد الطائفي</p>
+        <div class="price">٢٨٠ ر.س</div>
+      </div>
+
+      <div class="card">
+        <img src="images/02.jpg" alt="">
+        <h3>عود الليل</h3>
+        <p>عطر رجالي عميق بأفضل أخشاب العود</p>
+        <div class="price">٣٥٠ ر.س</div>
+      </div>
+
+      <div class="card">
+        <img src="images/03.jpg" alt="">
+        <h3>نسيم الصيف</h3>
+        <p>خفيف ومنعش للاستخدام اليومي</p>
+        <div class="price">١٩٠ ر.س</div>
+      </div>
+
+      <div class="card">
+        <img src="images/04.jpg" alt="">
+        <h3>سحر المساء</h3>
+        <p>تركيبة سحرية للسهرات والمناسبات</p>
+        <div class="price">٤٢٠ ر.س</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- نموذج الطلب -->
+  <div class="order" id="order">
+    <h2>اطلب الآن</h2>
+    <form>
+      <label>الاسم الكامل</label>
+      <input type="text" placeholder="أدخل اسمك">
+
+      <label>رقم الجوال</label>
+      <input type="tel" placeholder="05xxxxxxxx">
+
+      <label>المنتج المطلوب</label>
+      <select>
+        <option value="">اختر العطر...</option>
+        <option>ورد الشرق — ٢٨٠ ر.س</option>
+        <option>عود الليل — ٣٥٠ ر.س</option>
+        <option>نسيم الصيف — ١٩٠ ر.س</option>
+        <option>سحر المساء — ٤٢٠ ر.س</option>
+      </select>
+
+      <label>عنوان التوصيل</label>
+      <input type="text" placeholder="الحي، الشارع، رقم المبنى">
+
+      <button type="button">تأكيد الطلب ✓</button>
+    </form>
+  </div>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>جميع الحقوق محفوظة © 2025 <span>AROMA</span></p>
+  </footer>
+
+</body>
+</html>
