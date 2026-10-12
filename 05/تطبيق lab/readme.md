@@ -8,6 +8,7 @@
 > **الأدوات:** محرّر أكواد (VS Code) + متصفح ويب
 
 > **ملاحظة:** المعمل بـ HTML فقط — بدون CSS. المطلوب صحّة البنية والوسوم لا التنسيق.
+> ولأننا لم نبدأ CSS بعد، نضع `<br>` بعد كل عنصر لعرضه في سطر مستقل (سننسّق الصفحة لاحقًا بـ CSS).
 
 ---
 
@@ -65,6 +66,7 @@
 1. ابدأ بالوسم `<form>`.
 2. أضف `<label>` مربوطة بحقل `<input type="text">`.
 3. أضف زر إرسال `<input type="submit">`.
+4. ضع `<br>` بعد كل عنصر (التسمية والحقل) ليظهر في سطر مستقل.
 
 <details>
 <summary>تلميح</summary>
@@ -77,8 +79,8 @@
 
 ```html
 <form>
-  <label for="name">الاسم:</label>
-  <input type="text" id="name" name="name">
+  <label for="name">الاسم:</label><br>
+  <input type="text" id="name" name="name"><br>
 
   <input type="submit" value="إرسال">
 </form>
@@ -108,20 +110,20 @@
 
 ```html
 <form>
-  <label for="uname">الاسم:</label>
-  <input type="text" id="uname" name="uname">
+  <label for="uname">الاسم:</label><br>
+  <input type="text" id="uname" name="uname"><br>
 
-  <label for="email">البريد الإلكتروني:</label>
-  <input type="email" id="email" name="email">
+  <label for="email">البريد الإلكتروني:</label><br>
+  <input type="email" id="email" name="email"><br>
 
-  <label for="pass">كلمة المرور:</label>
-  <input type="password" id="pass" name="pass">
+  <label for="pass">كلمة المرور:</label><br>
+  <input type="password" id="pass" name="pass"><br>
 
-  <label for="age">العمر:</label>
-  <input type="number" id="age" name="age">
+  <label for="age">العمر:</label><br>
+  <input type="number" id="age" name="age"><br>
 
-  <label for="bdate">تاريخ الميلاد:</label>
-  <input type="date" id="bdate" name="bdate">
+  <label for="bdate">تاريخ الميلاد:</label><br>
+  <input type="date" id="bdate" name="bdate"><br>
 
   <input type="submit" value="تسجيل">
 </form>
@@ -139,7 +141,7 @@
 <details>
 <summary>تلميح</summary>
 
-لجعل الخيارات مجموعة واحدة (اختيار واحد فقط)، امنحها **نفس قيمة `name`**.
+لجعل الخيارات مجموعة واحدة (اختيار واحد فقط)، امنحها **نفس قيمة `name`**. وضع `<br>` بعد تسمية كل خيار يجعله في سطر مستقل.
 </details>
 
 <details>
@@ -149,13 +151,13 @@
 <p>لغتك المفضّلة:</p>
 
 <input type="radio" id="html" name="lang" value="HTML">
-<label for="html">HTML</label>
+<label for="html">HTML</label><br>
 
 <input type="radio" id="css" name="lang" value="CSS">
-<label for="css">CSS</label>
+<label for="css">CSS</label><br>
 
 <input type="radio" id="js" name="lang" value="JavaScript">
-<label for="js">JavaScript</label>
+<label for="js">JavaScript</label><br>
 ```
 </details>
 
@@ -170,13 +172,13 @@
 <p>اهتماماتك:</p>
 
 <input type="checkbox" id="i1" name="interest" value="Sport">
-<label for="i1">الرياضة</label>
+<label for="i1">الرياضة</label><br>
 
 <input type="checkbox" id="i2" name="interest" value="Prog">
-<label for="i2">البرمجة</label>
+<label for="i2">البرمجة</label><br>
 
 <input type="checkbox" id="i3" name="interest" value="Reading">
-<label for="i3">القراءة</label>
+<label for="i3">القراءة</label><br>
 ```
 </details>
 
@@ -201,15 +203,15 @@
 <summary>الحل</summary>
 
 ```html
-<label for="subject">الموضوع:</label>
+<label for="subject">الموضوع:</label><br>
 <select id="subject" name="subject">
   <option value="ask">استفسار</option>
   <option value="tech">مشكلة تقنية</option>
   <option value="other">أخرى</option>
-</select>
+</select><br>
 
-<label for="msg">رسالتك:</label>
-<textarea id="msg" name="msg" rows="4" placeholder="اكتب رسالتك هنا"></textarea>
+<label for="msg">رسالتك:</label><br>
+<textarea id="msg" name="msg" rows="4" placeholder="اكتب رسالتك هنا"></textarea><br>
 ```
 </details>
 
@@ -233,12 +235,12 @@
 <summary>الحل</summary>
 
 ```html
-<label for="phone">رقم الهاتف:</label>
+<label for="phone">رقم الهاتف:</label><br>
 <input type="text" id="phone" name="phone"
        required
        placeholder="أدخل رقم الهاتف"
        maxlength="10"
-       pattern="[0-9]{10}">
+       pattern="[0-9]{10}"><br>
 ```
 </details>
 
@@ -259,8 +261,8 @@
 
 ```html
 <form action="register.php" method="POST">
-  <label for="user">المستخدم:</label>
-  <input type="text" id="user" name="user" required>
+  <label for="user">المستخدم:</label><br>
+  <input type="text" id="user" name="user" required><br>
 
   <button type="submit">إرسال</button>
 </form>
@@ -288,6 +290,8 @@
 | 7 | تسمية `<label>` مربوطة لكل حقل | label |
 | 8 | زر إرسال (`submit`) وزر إعادة تعيين (`reset`) | الأزرار |
 
+> ضع `<br>` بعد كل عنصر (التسمية والحقل) ليظهر كلٌّ في سطر مستقل.
+
 ## الهيكل المقترح (اكمل الفراغات بنفسك):
 
 ```html
@@ -303,17 +307,17 @@
 
   <form action="register.php" method="GET">
 
-    <!-- الاسم الكامل -->
-    <!-- البريد الإلكتروني -->
-    <!-- رقم الهاتف -->
+    <!-- الاسم الكامل: label + input + <br> -->
+    <!-- البريد الإلكتروني: label + input + <br> -->
+    <!-- رقم الهاتف: label + input + <br> -->
 
-    <!-- الموضوع: <select> -->
+    <!-- الموضوع: label + <select> + <br> -->
 
-    <!-- رسالتك: <textarea> -->
+    <!-- رسالتك: label + <textarea> + <br> -->
 
-    <!-- طريقة التواصل المفضّلة: radio -->
+    <!-- طريقة التواصل المفضّلة: radio + label لكل خيار + <br> -->
 
-    <!-- الموافقة على الشروط: checkbox -->
+    <!-- الموافقة على الشروط: checkbox + label + <br> -->
 
     <!-- زر إرسال + زر إعادة تعيين -->
 
@@ -331,6 +335,7 @@
 
 - [ ] الصفحة تفتح في المتصفح بدون أخطاء.
 - [ ] كل حقل له `<label>` مربوطة به عبر `for` و `id` متطابقين.
+- [ ] كل عنصر يظهر في سطر مستقل (باستخدام `<br>`).
 - [ ] استخدمت أنواع `input` المناسبة (نص، بريد، رقم، هاتف…).
 - [ ] خيارات `radio` لها نفس `name` (اختيار واحد فقط).
 - [ ] يوجد قائمة منسدلة `<select>` ومنطقة نص `<textarea>`.
