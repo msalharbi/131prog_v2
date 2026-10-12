@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>نموذج حجز موعد</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>نموذج حجز موعد</h1>
+
+    <form>
+
+        <!-- الاسم -->
+        <label for="name">الاسم الكامل:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <!-- الجوال -->
+        <label for="phone">رقم الجوال:</label><br>
+        <input type="tel" id="phone" name="phone" required placeholder="05xxxxxxxx"><br>
+        <!-- البريد -->
+        <label for="email">البريد الإلكتروني:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <!-- نوع الخدمة -->
+        <label for="service">نوع الخدمة:</label><br>
+        <select id="service" name="service" required>
+            <option value="">اختر الخدمة</option>
+            <option>استشارة تقنية</option>
+            <option>دعم فني</option>
+            <option>تدريب</option>
+            <option>أخرى</option>
+        </select>
+        <br>
+        <!-- التاريخ -->
+        <label for="date">تاريخ الموعد:</label><br>
+        <input type="date" id="date" name="date" required><br>
+
+        <!-- الاستعجال -->
+        <label>مستوى الاستعجال:</label><br>
+        <div class="radio-group">
+            <input type="radio" name="urgency" value="normal" required> عادي<br>
+            <input type="radio" name="urgency" value="medium"> متوسط<br>
+            <input type="radio" name="urgency" value="urgent"> عاجل
+        </div>
+
+        <br>
+        <!-- الملاحظات -->
+        <label for="notes">ملاحظات إضافية:</label><br>
+        <textarea id="notes" name="notes" placeholder="اكتب ملاحظاتك هنا..."></textarea><br>
+        <!-- الموافقة -->
+            <input type="checkbox" id="agree" required>
+            <label for="agree" style="display:inline;">
+                أوافق على سياسة الحجز والشروط
+            </label><br>
+
+        <!-- الأزرار -->
+        <div class="buttons">
+            <button type="submit">إرسال</button>
+            <button type="reset">إعادة تعيين</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

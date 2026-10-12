@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل جديد</title>
+</head>
+<body>
+    <h1>نموذج تسجيل مستخدم جديد</h1>
+
+    <section>
+        <h2>المعلومات الشخصية</h2>
+        
+        <label for="fname">الاسم الكامل:</label><br>
+        <input type="text" name="fname" id="fname" required><br>
+        
+        <label for="email">البريد الإلكتروني: </label><br>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="password">كلمة المرور: </label><br>
+        <input type="password" name="password" id="password" minlength="8" required><br>
+
+        <p>الجنس: </p>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">ذكر</label><br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">أنثى</label><br>
+
+    </section>
+
+    <section>
+        <h2>التخصص والمدينة </h2>
+
+        <label for="majors">التخصص:</label><br>
+        <select name="majors" id="majors">
+            <option value="prog">برمجيات</option>
+            <option value="ts">دعم فني</option>
+            <option value="networks">شبكات</option>
+            <option value="ot">إدارة مكتبية</option>
+        </select><br>
+        <label for="city">المدينة</label><br>
+        <input type="text" name="city" id="city" placeholder="مثال: بريدة"><br>
+    </section>
+
+    <section>
+        <h2>الاهتمامات  </h2>
+        <input type="checkbox" name="interests" id="web">
+        <label for="web">تطوير الويب</label><br>
+        <input type="checkbox" name="interests" id="ai">
+        <label for="ai">الذكاء الاصطناعي</label><br>
+        <input type="checkbox" name="interests" id="cs">
+        <label for="cs">الامن السيبراني</label><br>
+        <input type="checkbox" name="interests" id="da">
+        <label for="da">تحليل البيانات </label><br>
+    </section>
+
+    <section>
+        <h2>الملاحظات </h2>
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="اكتب ملاحظاتك هنا"></textarea>
+    </section>
+
+    <input type="checkbox" name="tc" id="tc">
+    <label for="tc">أوافق على الشروط و الأحكام</label>
+
+    <br>
+    <input type="submit" value="إرسال">
+    <input type="reset" value="مسح">
+</body>
+</html>
