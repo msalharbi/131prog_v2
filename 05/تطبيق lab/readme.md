@@ -260,10 +260,9 @@
 <summary>الحل</summary>
 
 ```html
-<form action="register.php" method="POST">
-  <label for="user">المستخدم:</label><br>
-  <input type="text" id="user" name="user" required><br>
-
+<form action="result.html" method="get">
+  <input name="username">
+  <input name="age">
   <button type="submit">إرسال</button>
 </form>
 ```
