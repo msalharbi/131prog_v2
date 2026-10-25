@@ -47,7 +47,7 @@
 | 11 | الموافقة على الشروط | `checkbox`، **إلزامي** |
 | 12 | الأزرار | زر إرسال (`submit`) وزر إعادة تعيين (`reset`) |
 
-كما يجب أن يحتوي `<form>` على `method="POST"` و `action="register.php"`.
+كما يجب أن يحتوي `<form>` على `method="POST"` و `action="register.html"`.
 
 ---
 
@@ -64,7 +64,7 @@
 
   <h1>التسجيل في الهاكاثون</h1>
 
-  <form action="register.php" method="POST">
+  <form action="register.html" method="POST">
 
     <!-- اسم المشارك: label + input (text) + required + <br> -->
     <!-- البريد: label + input (email) + required + <br> -->
@@ -135,63 +135,9 @@
 
   <h1>التسجيل في الهاكاثون</h1>
 
-  <form action="register.php" method="POST">
+  <form action="register.html" method="POST">
 
-    <label for="name">اسم المشارك:</label><br>
-    <input type="text" id="name" name="name" required><br>
-
-    <label for="email">البريد الإلكتروني:</label><br>
-    <input type="email" id="email" name="email" required><br>
-
-    <label for="phone">رقم الجوال:</label><br>
-    <input type="tel" id="phone" name="phone" required
-           pattern="[0-9]{10}" placeholder="05xxxxxxxx"><br>
-
-    <label for="org">الجهة / الجامعة:</label><br>
-    <input type="text" id="org" name="org"><br>
-
-    <p>المسار:</p>
-    <input type="radio" id="t1" name="track" value="ai" required>
-    <label for="t1">الذكاء الاصطناعي</label><br>
-    <input type="radio" id="t2" name="track" value="web">
-    <label for="t2">تطوير الويب</label><br>
-    <input type="radio" id="t3" name="track" value="iot">
-    <label for="t3">إنترنت الأشياء</label><br>
-
-    <p>التقنيات التي تتقنها:</p>
-    <input type="checkbox" id="s1" name="skills" value="HTML">
-    <label for="s1">HTML</label><br>
-    <input type="checkbox" id="s2" name="skills" value="CSS">
-    <label for="s2">CSS</label><br>
-    <input type="checkbox" id="s3" name="skills" value="JavaScript">
-    <label for="s3">JavaScript</label><br>
-    <input type="checkbox" id="s4" name="skills" value="Python">
-    <label for="s4">Python</label><br>
-
-    <label for="level">مستوى الخبرة:</label><br>
-    <select id="level" name="level">
-      <option value="beginner">مبتدئ</option>
-      <option value="intermediate">متوسط</option>
-      <option value="advanced">متقدم</option>
-    </select><br>
-
-    <label for="team">اسم الفريق:</label><br>
-    <input type="text" id="team" name="team"><br>
-
-    <label for="size">حجم الفريق:</label><br>
-    <input type="number" id="size" name="size"><br>
-
-    <label for="idea">فكرة المشروع المبدئية:</label><br>
-    <textarea id="idea" name="idea" rows="4"
-      placeholder="اكتب فكرتك باختصار" required></textarea><br>
-
-    <input type="checkbox" id="agree" name="agree" required>
-    <label for="agree">أوافق على شروط المشاركة</label><br>
-
-    <input type="submit" value="تسجيل">
-    <input type="reset" value="إعادة تعيين">
-
-  </form>
+    <!--سوف يضاف لاحقا-->
 
 </body>
 </html>
